@@ -26,36 +26,25 @@
 #### 伪代码
 ```
 FirstMethod(x)
-    if x < 0
+    if x < 0 || (x %10 ==0 && x != 0)
         return false
     str = x.toString()
     i = 0
     j = str.length -1
-    if x != 0 && str[j] == 0
-        return false
     while i < j
         if str[i] != str[j]
             return false
     i ++
-j --
+    j --
     return true
 ```
 ```
 SecondMethod(x)
-    if x < 0
+    if x < 0 || (x %10 ==0 && x != 0)
         return false
     reverseVal = 0
-    isOdd = false
     while x > reverseVal
-        val = x % 10
-        reverseVal = reverseVal * 10 + val
-        if reverseVal == 0 && x != 0
-            return false
+        reverseVal = reverseVal * 10 + x % 10
         x /= 10
-        isOdd = !isOdd
-    if isOdd
-        reverseVal /= 10
-    if reverseVal != x
-        return false
-    return true
+    return reverseVal == x || reverseVal /10 == x
 ```
