@@ -27,7 +27,7 @@
 通过这道题，我学到了牛顿法的使用，`MySqrt2()`使用的就是牛顿法。该方法需要使用浮点数来计算。
 
 #### 伪代码
-
+```
 MY-SQRT(x)
     low, high = 0, x
     res = 0
@@ -43,3 +43,4 @@ MY-SQRT(x)
         else
             high = mid -1
     return res
+```
