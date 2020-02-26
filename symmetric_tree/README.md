@@ -24,9 +24,10 @@
 如果你可以运用递归和迭代两种方法解决这个问题，会很加分。
 
 #### 思路
-先获取二叉树的前序序列。
+跟前面的`Some Tree`这题基本相似，比较变成`root`的递归左右子树，并且是左结点跟右节点比较。
 
 #### 伪代码
+```
 IS-SYMMETRIC(root)
     if root != nil
         return IS-EQUAL(root.left, root.right)
@@ -38,3 +39,4 @@ IS-EQUAL(p, q)
     if p.val == q.val
         return IS-EQUAL(p.left, q.right) && IS-EQUAL(p.right, q.left)
     return false
+```
