@@ -41,9 +41,11 @@
 这题可以使用前序查找比较来实现。
 
 #### 伪代码
+```
 IS-SAME-TREE(p, q)
     if p == nil && q == nil
         return true
     if (p == nil && q != nil) || (p != nil && q == nil) || p.val != q.val
         return false
     return IS-SAME-TREE(p.left, q.left) && IS-SAME-TREE(p.right, q.right)
+```
