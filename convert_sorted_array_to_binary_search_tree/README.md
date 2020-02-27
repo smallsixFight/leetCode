@@ -1,4 +1,4 @@
-### 将有序数组转换为二叉搜索树（Convent Sorted Array to Binary Search Tree）
+### 将有序数组转换为二叉搜索树（Convert Sorted Array to Binary Search Tree）
 [原题来源：力扣（LeetCode）](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)
 
 #### 题目
