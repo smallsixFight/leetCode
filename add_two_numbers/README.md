@@ -19,6 +19,7 @@
 这道题只是单纯考链表的操作，只需要考虑下进位问题。
 
 #### 伪代码
+```
 ADD-TWO-NUMBERS(l1, l2)
     head = new ListNode()
     p = head
@@ -39,3 +40,4 @@ ADD-TWO-NUMBERS(l1, l2)
         p.next = node
         p = p.next 
     return head.next
+```
