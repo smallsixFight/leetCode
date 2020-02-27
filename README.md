@@ -40,10 +40,24 @@
 22. 对称二叉树（Symmetric Tree） | [Link](https://leetcode-cn.com/problems/symmetric-tree/) | （02/26）
 23. 二叉树的最大深度（Maximum Depth of Binary Tree） | [Link](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) | （02/26）
 24. 二叉树的层次遍历 II（Binary Tree Level Order Traversal II） | [Link](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/) | （02/26）
-25. 将有序数组转换为二叉搜索树（Convent Sorted Array to Binary Search Tree） | [Link](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/) | （02/27）
+25. 将有序数组转换为二叉搜索树（Convert Sorted Array to Binary Search Tree） | [Link](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/) | （02/27）
 
 #### 中等题
-
+1. 两数相加（Add Two Numbers） | [Link](https://leetcode-cn.com/problems/add-two-numbers/) | (02/27)
+2. 无重复字符的最长子串（Longest Substring Without Repeating Characters） | [Link](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | (02/27)
+3. 最长回文子串（Longest Palindromic Substring） | [Link](https://leetcode-cn.com/problems/longest-palindromic-substring/) | (02/27)
+4. Z 字形变换（ZigZag Conversion） | [Link](https://leetcode-cn.com/problems/zigzag-conversion/) | (02/27)
+5. 字符串转换整数 (atoi)（String to Integer(atoi)） | [Link]()
+6. 盛最多水的容器（Container With Most Water） | [Link]()
+7. 整数转罗马数字（Integer to Roman） | [Link]()
+8. 三数之和（3Sum） | [Link]()
+9. 最接近的三数之和（3Sum Closest） | [Link]()
+10. 电话号码的字母组合（Letter Combinations of a Phone Number） | [Link]()
+11. 四数之和（4Sum） | [Link]()
+12. 删除链表的倒数第 N 个节点（Remove Nth Node From End of List） | [Link]()
+13. 括号生成（Generate Parentheses） | [Link]()
+14. 两两交换链表中的节点（Swap Nodes in Pairs） | [Link]()
+15. 两数相除（Divide Two Integers） | [Link]()
 
 #### 困难题
 
