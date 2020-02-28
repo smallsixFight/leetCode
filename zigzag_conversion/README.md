@@ -43,6 +43,7 @@ T     S     G
 以上面为基础，循环执行并对临界值进行相应的处理即可。
 
 #### 伪代码
+```
 CONVERT(s, numRows)
     divVal = numRows -1
     res = new array()
@@ -54,3 +55,4 @@ CONVERT(s, numRows)
                 arr.add(s[(divVal - p % divVal) * 2 + p])
             p += divVal *2
     return res.toString()
+```
