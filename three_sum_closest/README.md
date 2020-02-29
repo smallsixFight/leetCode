@@ -19,6 +19,7 @@
 - 如果`nums[i+1] == nums[i]`或`nums[r-1] == nums[r]`会导致重复计算，则可以直接跳过。
 
 #### 伪代码
+```
 THREE-SUM-CLOSEST(nums, target)
     sort(nums)
     res = target > 0 ? math.MinInt32 : math.MaxInt32
@@ -41,4 +42,4 @@ THREE-SUM-CLOSEST(nums, target)
                         r --
                     r --
     return tes
-                
+```             
