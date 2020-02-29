@@ -28,6 +28,7 @@
 - 如果判断字符为`0`或`1`，直接返回空字符串数组。
 
 #### 伪代码
+```
 LETTER-COMBINATIONS(digits)
     dict = ['2': {'a', 'b', 'c'}, '3': {'d', 'e', 'f'}, '4': {'g', 'h', 'i'}, '5': {'j', 'k', 'l'}, 
                 '6': {'m', 'n', 'o'}, '7': {'p', 'q', 'r', 's'}, '8': {'t', 'u', 'v'}, '9': {'w', 'x', 'y', 'z'}]
@@ -46,3 +47,4 @@ LETTER-COMBINATIONS(digits)
                 res.push(res[j] + v)
         res = res[l:]
     return res
+```
