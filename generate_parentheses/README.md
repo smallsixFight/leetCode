@@ -1,7 +1,6 @@
 ### 括号生成（Generate Parentheses）
 [原题来源：力扣（LeetCode）](https://leetcode-cn.com/problems/generate-parentheses/)
 
-
 #### 题目
 给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且**有效的**括号组合。
 
