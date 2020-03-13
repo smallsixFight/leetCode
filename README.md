@@ -60,6 +60,13 @@
 15. 两数相除（Divide Two Integers） | [Link](https://leetcode-cn.com/problems/divide-two-integers/) | (03/01)
 
 #### 困难题
+1. 寻找两个有序数组的中位数（Median of Two Sorted Arrays） | [Link](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/) | (03/04)
+2. 正则表达式匹配（Regular Expression Matching） | [Link](https://leetcode-cn.com/problems/regular-expression-matching/) | (03/09)
+3. 合并 K 个排序链表（Merge k Sorted Lists） | [Link](https://leetcode-cn.com/problems/merge-k-sorted-lists/) | (03/09)
+4. K 个一组翻转链表（Reverse Nodes in k-Group） | [Link](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | (03/10)
+5. 串联所有单词的子串（Substring with Concatenation of All Words） | [Link](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/) | (03/13)
 
+#### 一期计划总结
+简单和中等题目都在计划的时间内完成，但是困难题拖了好久，工作的压力也存在一定影响（几次下班后基本都直接睡着了），但题目的难度确实超过我的预期，了解到自己的很多不足，得继续精进才行。
 
 </details>
