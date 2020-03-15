@@ -31,6 +31,7 @@
 关于如何去找旋转点，其实也可以使用二分法来查找，找到后使用二分法来查找 target，所以这道题需要使用两次二分法。
 
 #### 伪代码
+```
 SEARCH(nums, target)
     if nums.length  == 0
         return -1
@@ -39,7 +40,7 @@ SEARCH(nums, target)
     minIdx = 0      // 没旋转的话就是 0
     for low <= high
         mid = (low + high) /2
-        if t1 < nums[mid] && mid +1 < nums.length
+        if t1 <= nums[mid] && mid +1 < nums.length
             if t1 > nums[mid+1]
                 midIdx = mid +1
                 break
@@ -54,7 +55,10 @@ SEARCH(nums, target)
         high = nums.length -1
     else target > nums[0]
         low = 1
-        high = minIdx -1
+        if midIdx != 0
+            high = minIdx -1
+        else
+            high = nums.length -1
     else
         return 0
     for low <= high
@@ -66,3 +70,4 @@ SEARCH(nums, target)
         else
             low = mid +1
     return -1
+```
