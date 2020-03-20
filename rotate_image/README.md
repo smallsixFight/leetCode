@@ -56,13 +56,13 @@
 ```
 ROTATE(matrix)
     n = matrix.length
-    low, high = 0, n -2
-    for low < high
-        i, j = low, low
-        t = matrix[i][j]
-        for i = 0 to 3
-            i, j = j, n -i -1
-            temp = matrix[i][j]
-            matrix[i][j] = t
-            t = temp
+    for l = 0 to n/2
+        for s to l to n-l-2
+            i, j = l, s
+            t = matrix[i][s]
+            for k to 3
+                i, j = j, n-i-1
+                temp = matrix[i][j]
+                matrix[i][j] = t
+                t = temp
 ```
