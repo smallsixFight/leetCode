@@ -53,7 +53,7 @@ SEARCH(nums, target)
     if target < nums[0]
         low = minIdx
         high = nums.length -1
-    else target > nums[0]
+    elseif target > nums[0]
         low = 1
         if midIdx != 0
             high = minIdx -1
