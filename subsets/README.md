@@ -33,7 +33,7 @@ SUBSETS(nums)
     for i = 0 to nums.length -1
         res.push([]int{i})
     for i = 1 to nums.length -1
-        DFS(res(i), i+1)
+        DFS(res(i), i)
         
 DFS(arr, s)
     if s == nums.length
