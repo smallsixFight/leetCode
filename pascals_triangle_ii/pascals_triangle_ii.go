@@ -1,15 +1,15 @@
 package pascals_triangle_ii
 
-// 符合杨辉三角定义的函数
-func GetRowTwo(rowIndex int) []int {
-	if rowIndex == 0 {
+// 传入行数
+func GetRowTwo(rowNum int) []int {
+	if rowNum == 0 {
 		return nil
-	} else if rowIndex == 1 {
+	} else if rowNum == 1 {
 		return []int{1}
 	}
-	res := make([]int, rowIndex)
+	res := make([]int, rowNum)
 	res[0], res[1] = 1, 1
-	for i := 2; i < rowIndex; i++ {
+	for i := 2; i < rowNum; i++ {
 		res[i] = 1
 		for k := i - 1; k > 0; k-- {
 			res[k] += res[k-1]
