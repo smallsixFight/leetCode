@@ -36,6 +36,7 @@
 额...我认为这道题跟股票没任何关系。
 
 #### 伪代码
+```
 // DP
 MAX-PROFIT(prices)
     maxProfit = 0
@@ -64,4 +65,4 @@ MAX-PROFIT(prices)
                 sellDay = k
                 maxProfit = prices[k] - prices[i]
     return maxProfit
-    
+```
