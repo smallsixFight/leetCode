@@ -71,10 +71,11 @@
 
 </details>
 
-### 二期计划（2020-03-13）
+### 二期计划（2020/03/13~2020/04/15）
 第二期 LeetCode 继续，本期的目标是`40`道中等题，`7`道简单题，`3`道困难题，第二期从中等题开始做，所以排序第一的为中等题。
 
 <details>
+
 <summary><strong>二期题目</strong></summary>
 
 #### 中等题
@@ -120,16 +121,26 @@
 40. 不同的二叉树搜索树（Unique Binary Search Trees） | [Link](https://leetcode-cn.com/problems/unique-binary-search-trees/) | (04/08)
 
 #### 简单题
-1. 平衡二叉树（Balanced Binary Tree） | [Link]() | ()
-2. 二叉树的最小深度（Minimum Depth of Binary Tree） | [Link]() | ()
-3. 路径总和（Path Sum） | [Link]() | ()
-4. 杨辉三角（Pascal's Triangle） | [Link]() | ()
-5. 杨辉三角 II（Pascal's Triangle II） | [Link]() | ()
-6. 买卖股票的最佳时机（Best Time to Buy and Sell Stock） | [Link]() | ()
-7. 买卖股票的最佳时机 II（Best Time to Buy and Sell Stock II） | [Link]() | ()
+1. 平衡二叉树（Balanced Binary Tree） | [Link](https://leetcode-cn.com/problems/balanced-binary-tree/) | (04/08)
+2. 二叉树的最小深度（Minimum Depth of Binary Tree） | [Link](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/) | (04/09)
+3. 路径总和（Path Sum） | [Link](https://leetcode-cn.com/problems/path-sum/) | (04/09)
+4. 杨辉三角（Pascal's Triangle） | [Link](https://leetcode-cn.com/problems/pascals-triangle/) | (04/09)
+5. 杨辉三角 II（Pascal's Triangle II） | [Link](https://leetcode-cn.com/problems/pascals-triangle-ii/) | (04/09)
+6. 买卖股票的最佳时机（Best Time to Buy and Sell Stock） | [Link](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | (04/09)
+7. 买卖股票的最佳时机 II（Best Time to Buy and Sell Stock II） | [Link](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) | (04/09)
 
 #### 困难题
+1. 最长有效括号（Longest Valid Parentheses） | [Link](https://leetcode-cn.com/problems/longest-valid-parentheses/) | (04/10)
+2. 解数独（Sudoku Solver） | [Link](https://leetcode-cn.com/problems/sudoku-solver/) | (04/10)
+3. 缺失的第一个正数（First Missing Positive） | [Link](https://leetcode-cn.com/problems/first-missing-positive/) | (04/14)
 
+#### 追加
+追加五道中等题，凑够 100 题（不含竞赛题目）。
 
+1. 验证二叉搜索树（Validate Binary Search Tree） | [Link](https://leetcode-cn.com/problems/validate-binary-search-tree/) | (04/14)
+2. 二叉树的层序遍历（Binary Tree Level Order Traversal） | [Link](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | (04/15)
+3. 二叉树的锯齿形层次遍历（Binary Tree Zigzag Level Order Traversal） | [Link](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/) | (04/15)
+4. 从前序与中序遍历序列构造二叉树（Construct Binary Tree from Preorder and Inorder Traversal） | [Link](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | (04/15)
+5. 从中序与后序遍历序列构造二叉树（Construct Binary Tree from Inorder and Postorder Traversal） | [Link](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | (04/15)
 
 </details>
