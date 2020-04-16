@@ -44,8 +44,8 @@ DFS(node, sum, arr, res)
         return
     arr.push(node.val)
     if node.val == sum && (node.left == nil && node.right == nil)
-        res.push(arr)
+        copy(temp, arr)
+        res.push(temp)
     DFS(node.left, sum - node.val, arr, res)
-    copy(arr, newArr)
-    DFS(node.right, sum - node.val, newArr, res)
+    DFS(node.right, sum - node.val, arr, res)
 ```
