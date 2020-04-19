@@ -53,10 +53,10 @@ DFS(board, i, j)
     board[i][j] = '#'
     if i > 0 && board[i-1][j] == 'O'
         DFS(board, i-1, j)
-    if i < board.length && board[i+1][j] == 'O'
+    if i < board.length -1 && board[i+1][j] == 'O'
         DFS(board, i +1, j)
     if j > 0 && board[i][j-1] == 'O'
         DFS(board, i, j-1)
-    if j < board[0].length && board[i][j+1] == 'O'
+    if j < board[0].length -1 && board[i][j+1] == 'O'
         DFS(board, i, j+1)
 ```
