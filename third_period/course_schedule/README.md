@@ -38,7 +38,7 @@ CAN-FINISH(numCourses, prerequisites)
     adjacency = new Map()
     flags = [numCourses]int{}
     for i = 0 to prerequisites.length -1
-        adjacency[prerequisites[1]].add(prerequisites[0])
+        adjacency[prerequisites[i][1]].add(prerequisites[i][0])
     for i = 0 to numCourses.length -1
         if !DFS(adjacency, flags, i)
             return false
