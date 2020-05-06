@@ -144,3 +144,53 @@
 5. 从中序与后序遍历序列构造二叉树（Construct Binary Tree from Inorder and Postorder Traversal） | [Link](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | (04/15)
 
 </details>
+
+### 三期计划（2020/04/16～2020）
+第三期 LeetCode 继续，本期的目标跟第二期一样，依旧是`40`道中等题，`7`道简单题，`3`道困难题。本期还是从中等题开始做，所以排序第一的为中等题。
+
+<details>
+
+<summary><strong>二期题目</strong></summary>
+
+#### 中等题
+1. 有序链表转换二叉搜索树 （Convert Sorted List to Binary Search Tree） | [Link](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/) | (04/16)
+2. 路径总和 II（Path Sum II） | [Link](https://leetcode-cn.com/problems/path-sum-ii/) | (04/16)
+3. 二叉树展开为链表（Flatten Binary Tree to Linked List） | [Link](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/) | (04/17)
+4. 填充每个节点的下一个右侧节点指针（Populating Next Right Pointers in Each Node） | [Link](https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/) | (04/17)
+5. 填充每个节点的下一个右侧节点指针 II（Populating Next Right Pointers in Each Node II） | [Link](https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node-ii/) | (04/18)
+6. 三角形最小路径和（Triangle） | [Link](https://leetcode-cn.com/problems/triangle/) | (04/18)
+7. 单词接龙（Word Ladder） | [Link](https://leetcode-cn.com/problems/word-ladder/) | (04/18)
+8. 求根到叶子节点数字之和（Sum Root to Leaf Numbers） | [Link](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/) | (04/19)
+9. 被围绕的区域（Surrounded Regions） | [Link](https://leetcode-cn.com/problems/surrounded-regions/) | (04/19)
+10. 分割回文串（Palindrome Partitioning） | [Link](https://leetcode-cn.com/problems/palindrome-partitioning/) | (04/21)
+11. 克隆图（Clone Graph） | [Link](https://leetcode-cn.com/problems/clone-graph/) | (04/21)
+12. 加油站（Gas Station） | [Link](https://leetcode-cn.com/problems/gas-station/) | (04/21)
+13. 只出现一次的数字 II（Single Number II） | [Link](https://leetcode-cn.com/problems/single-number-ii/) | (04/22)
+14. 复制带随机指针的链表（Copy List with Random Pointer） | [Link](https://leetcode-cn.com/problems/copy-list-with-random-pointer/) | (04/22)
+15. 单词拆分（Word Break） | [Link](https://leetcode-cn.com/problems/word-break/) | (04/22)
+16. 环形链表 II（Linked List Cycle II） | [Link](https://leetcode-cn.com/problems/linked-list-cycle-ii/) | (04/23)
+17. 重排链表（Reorder List） | [Link](https://leetcode-cn.com/problems/reorder-list/) | (04/23)
+18. 二叉树的前序遍历（Binary Tree Preorder Traversal） | [Link](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/) | (04/23)
+19. LRU 缓存机制（LRU Cache） | [Link](https://leetcode-cn.com/problems/lru-cache/) | (04/25)
+20. 对链表进行插入排序（Insertion Sort List） | [Link](https://leetcode-cn.com/problems/insertion-sort-list/) | (04/25)
+21. 排序链表（Sort List） | [Link](https://leetcode-cn.com/problems/sort-list/) | (04/26)
+22. 逆波兰表达式求值（Evaluate Reverse Polish Notation） | [Link](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/) | (04/26)
+23. 翻转字符串里的单词（Reverse Words in a String） | [Link](https://leetcode-cn.com/problems/reverse-words-in-a-string/) | (04/26)
+24. 乘积最大子数组（Maximum Product Subarray） | [Link](https://leetcode-cn.com/problems/maximum-product-subarray/) | (04/26)
+25. 寻找旋转排序数组中的最小值（Find Minimum in Rotated Sorted Array） | [Link](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/) | (04/27)
+26. 寻找峰值（Find Peak Element） | [Link](https://leetcode-cn.com/problems/find-peak-element/) | (04/27)
+27. 比较版本号（Compare Version Numbers） | [Link](https://leetcode-cn.com/problems/compare-version-numbers/) | (04/28)
+28. 分数到小数（Fraction to Recurring Decimal） | [Link](https://leetcode-cn.com/problems/fraction-to-recurring-decimal/) | (04/29)
+29. 二叉搜索树迭代器（Binary Search Tree Iterator） | [Link](https://leetcode-cn.com/problems/binary-search-tree-iterator/) | (04/29)
+30. 第 N 高的薪水（Nth Highest Salary） | [Link](https://leetcode-cn.com/problems/nth-highest-salary/) | (04/29)
+31. 最大数（Largest Number） | [Link](https://leetcode-cn.com/problems/largest-number/) | (05/01)
+32. 二叉树的右视图（Binary Tree Right Side View） | [Link](https://leetcode-cn.com/problems/binary-tree-right-side-view/) | (05/01)
+33. 岛屿数量（Number of Islands） | [Link](https://leetcode-cn.com/problems/binary-tree-right-side-view/) | (05/01)
+34. 课程表（Course Schedule） | [Link](https://leetcode-cn.com/problems/course-schedule/) | (05/05)
+35. 实现 Trie (前缀树)（Implement Trie (Prefix Tree)） | [Link](https://leetcode-cn.com/problems/implement-trie-prefix-tree/) | (05/05)
+36. 长度最小的子数组（Minimum Size Subarray Sum） | [Link](https://leetcode-cn.com/problems/minimum-size-subarray-sum/) | (05/05)
+37. 课程表 II（Course Schedule II） | [Link](https://leetcode-cn.com/problems/course-schedule-ii/) | (05/06)
+38. 添加与搜索单词 - 数据结构设计（Add and Search Word - Data structure design） | [Link](https://leetcode-cn.com/problems/add-and-search-word-data-structure-design/) | (05/06)
+
+
+</details>
