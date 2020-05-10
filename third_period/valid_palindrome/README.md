@@ -21,6 +21,7 @@
 这道题可以用双指针法来做，需要忽略除字母和数字以外的字符。
 
 #### 伪代码
+```
 IS-PALINDROME(s)
     if s.length < 2
         return true
@@ -42,4 +43,7 @@ IS-PALINDROME(s)
             s[p2] = s[p2] - 32
         if s[p1] != s[p2]
             return false
+        p1 ++
+        p2 --
     return true
+```
