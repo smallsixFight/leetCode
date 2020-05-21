@@ -150,7 +150,7 @@
 
 <details>
 
-<summary><strong>二期题目</strong></summary>
+<summary><strong>三期题目</strong></summary>
 
 #### 中等题
 1. 有序链表转换二叉搜索树 （Convert Sorted List to Binary Search Tree） | [Link](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/) | (04/16)
