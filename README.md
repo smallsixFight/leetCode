@@ -190,7 +190,22 @@
 35. 实现 Trie (前缀树)（Implement Trie (Prefix Tree)） | [Link](https://leetcode-cn.com/problems/implement-trie-prefix-tree/) | (05/05)
 36. 长度最小的子数组（Minimum Size Subarray Sum） | [Link](https://leetcode-cn.com/problems/minimum-size-subarray-sum/) | (05/05)
 37. 课程表 II（Course Schedule II） | [Link](https://leetcode-cn.com/problems/course-schedule-ii/) | (05/06)
-38. 添加与搜索单词 - 数据结构设计（Add and Search Word - Data structure design） | [Link](https://leetcode-cn.com/problems/add-and-search-word-data-structure-design/) | (05/06)
+38. 添加与搜索单词 - 数据结构设计（Add and Search Word - Data structure design） | [Link](https://leetcode-cn.com/problems/add-and-search-word-data-structure-design/) | (05/10)
+39. 打家劫舍 II（House Robber II） | [Link](https://leetcode-cn.com/problems/house-robber-ii/) | (05/10)
+40. 数组中的第 K 个最大元素（Kth Largest Element in an Array） | [Link](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/) | (05/10)
 
+#### 简单题
+1. 验证回文串（Valid Palindrome） | [Link](https://leetcode-cn.com/problems/valid-palindrome/) | (05/10)
+2. 只出现一次的数字（Single Number） | [Link](https://leetcode-cn.com/problems/single-number/) | (05/10)
+3. 环形链表（Linked List Cycle） | [Link](https://leetcode-cn.com/problems/linked-list-cycle/) | (05/10)
+4. 最小栈（Min Stack） | [Link](https://leetcode-cn.com/problems/min-stack/) | (05/12)
+5. 相交链表（Intersection of Two Linked Lists） | [Link](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/) | (05/12)
+6. 两数之和 II - 输入有序数组（Two Sum II - Input array is sorted） | [Link](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | (05/13)
+7. Excel 表列名称（Excel Sheet Column Title） | [Link](https://leetcode-cn.com/problems/excel-sheet-column-title/) | (05/13)
+
+#### 困难题
+1. 接雨水（Trapping Rain Water） | [Link](https://leetcode-cn.com/problems/trapping-rain-water/) | (05/14)
+2. 通配符匹配（Wildcard Matching） | [Link](https://leetcode-cn.com/problems/wildcard-matching/) | (05/21)
+3. 跳跃游戏 II（Jump Game II） | [Link](https://leetcode-cn.com/problems/jump-game-ii/) | (05/21)
 
 </details>
