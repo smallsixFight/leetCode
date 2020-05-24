@@ -34,7 +34,7 @@ insert into Employee (Id, Name, Salary, ManagerId) values ('4', 'Max', '90000', 
 ```
 
 #### 思路
-
+这道题使用自连接查询查询就可以了。
 
 #### 答案
 ```sql
