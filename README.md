@@ -145,7 +145,7 @@
 
 </details>
 
-### 三期计划（2020/04/16～2020）
+### 三期计划（2020/04/16～2020/05/21）
 第三期 LeetCode 继续，本期的目标跟第二期一样，依旧是`40`道中等题，`7`道简单题，`3`道困难题。本期还是从中等题开始做，所以排序第一的为中等题。
 
 <details>
@@ -207,5 +207,39 @@
 1. 接雨水（Trapping Rain Water） | [Link](https://leetcode-cn.com/problems/trapping-rain-water/) | (05/14)
 2. 通配符匹配（Wildcard Matching） | [Link](https://leetcode-cn.com/problems/wildcard-matching/) | (05/21)
 3. 跳跃游戏 II（Jump Game II） | [Link](https://leetcode-cn.com/problems/jump-game-ii/) | (05/21)
+
+</details>
+
+### 四期计划（2020/05/22～2020）
+第三期 LeetCode 继续，本期的目的是刷一刷 SQL 题，将基于 MySQL 来做。由于不是会员，所以能做的题目实际只有 20 题，之前做过一题，所以剩下 19 题。
+
+<details>
+
+<summary><strong>四期题目</strong></summary>
+
+#### 简单题
+1. 组合两个表（Combine Two Tables） | [Link](https://leetcode-cn.com/problems/combine-two-tables/) | (05/22)
+2. 第二高的薪水（Second Highest Salary） | [Link](https://leetcode-cn.com/problems/second-highest-salary/) | (05/24)
+3. 超过经理收入的员工（Employees Earning More Than Their Managers） | [Link](https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/) | (05/24)
+4. 查找重复的电子邮箱（Duplicate Emails） | [Link](https://leetcode-cn.com/problems/duplicate-emails/) | (05/24)
+5. 从不订购的客户（Customers Who Never Order） | [Link](https://leetcode-cn.com/problems/customers-who-never-order/) | (05/24)
+6. 删除重复的电子邮箱（Delete Duplicate Emails） | [Link](https://leetcode-cn.com/problems/delete-duplicate-emails/) | (05/24)
+7. 上升的温度（Rising Temperature） | [Link](https://leetcode-cn.com/problems/rising-temperature/) | (05/24)
+8. 大的国家（Big Countries） | [Link](https://leetcode-cn.com/problems/big-countries/) | (05/24)
+9. 超过 5 名学生的课（Classes More Than 5 Students） | [Link](https://leetcode-cn.com/problems/classes-more-than-5-students/) | (05/24)
+10. 有趣的电影（Not Boring Movies） | [Link](https://leetcode-cn.com/problems/not-boring-movies/) | (05/24)
+11. 交换工资（Swap Salary） | [Link](https://leetcode-cn.com/problems/swap-salary/) | (05/24)
+12. 重新格式化部门表（Reformat Department Table） | [Link](https://leetcode-cn.com/problems/reformat-department-table/) | (05/24)
+
+#### 中等题
+1. 分数排名（Rank Scores） | [Link](https://leetcode-cn.com/problems/rank-scores/) | (05/25)
+2. 连续出现的数字（Consecutive Numbers） | [Link](https://leetcode-cn.com/problems/consecutive-numbers/) | (05/25)
+3. 部门工资最高的员工（Department Highest Salary） | [Link](https://leetcode-cn.com/problems/department-highest-salary/) | (05/25)
+4. 换座位（Exchange Seats） | [Link](https://leetcode-cn.com/problems/exchange-seats/) | (05/26)
+
+#### 困难题
+1. 部门工资前三高的所有员工（Department Top Three Salaries） | [Link](https://leetcode-cn.com/problems/department-top-three-salaries/) | (05/27)
+2. 行程和用户（Trips and Users） | [Link](https://leetcode-cn.com/problems/trips-and-users/) | (05/28)
+3. 体育馆的人流量（Human Traffic of Stadium） | [Link](https://leetcode-cn.com/problems/human-traffic-of-stadium/) | (05/28)
 
 </details>
