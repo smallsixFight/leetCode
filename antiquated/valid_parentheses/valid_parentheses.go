@@ -1,7 +1,7 @@
 package valid_parentheses
 
 import (
-	"github.com/smallsixFight/leetCode/utils"
+	"github.com/leetCode/antiquated/utils"
 )
 
 func IsValid2(s string) bool {

@@ -2,6 +2,7 @@ package substring_with_concatenation_of_all_words
 
 import (
 	"os"
+	"reflect"
 	"runtime/pprof"
 	"testing"
 )
@@ -64,4 +65,15 @@ func TestFindSubstringThree(t *testing.T) {
 	t.Log(res5)
 	res6 := FindSubstringThree("aaaaaaaa", []string{"aa", "aa", "aa"})
 	t.Log(res6)
+}
+
+func TestDeepEqual(t *testing.T) {
+	a1 := TS{s: "a"}
+	a2 := TS{s: "a", s2: "2"}
+	t.Log(reflect.DeepEqual(a1, a2))
+}
+
+type TS struct {
+	s  string
+	s2 string
 }
