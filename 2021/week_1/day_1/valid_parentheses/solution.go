@@ -10,7 +10,10 @@ package valid_parentheses
 1. 当栈里括号的数量大于字符串剩余未匹配的长度时，可直接 return false；
 2. 当栈里的数量为 0，遇到右括号时，可直接 return false。
 
-官网运行结果记录：
+官网运行结果记录
+结果：通过
+执行用时：0ms
+内存消耗：2MB
 
 */
 
