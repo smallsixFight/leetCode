@@ -2,7 +2,7 @@ package maximal_rectangle
 
 /*
 来源：[leetCode](https://leetcode-cn.com/)
-题目：[简化路径](https://leetcode-cn.com/problems/maximal-rectangle/)
+题目：[最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/)
 标签：`栈` `数组` `哈希表` `动态规划`
 
 简单思路：当尝试按层次遍历逐层添加高度并将图画出来后，可以发现每完成一层都需要求一次与 [柱状图中最大的矩阵](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/)

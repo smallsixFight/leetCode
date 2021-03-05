@@ -2,7 +2,7 @@ package largest_rectangle_in_histogram
 
 /*
 来源：[leetCode](https://leetcode-cn.com/)
-题目：[简化路径](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/)
+题目：[柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/)
 标签：`栈` `数组`
 
 简单思路：通过观察，最矮的柱子具有最大的宽度，以其为分割点，其左右两侧最矮的柱子又有各自那一侧最大的宽度；
