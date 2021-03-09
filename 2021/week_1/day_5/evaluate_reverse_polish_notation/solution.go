@@ -19,8 +19,14 @@ func evalRPN(tokens []string) int {
 	stack := make([]int, 0, len(tokens))
 	for i := range tokens {
 		if tokens[i] == "*" || tokens[i] == "/" || tokens[i] == "+" || tokens[i] == "-" {
-			v1, v2 := stack[len(stack)-1], stack[len(stack)-2]
-			stack = stack[:len(stack)-2]
+			v1 := stack[len(stack)-1]
+			v2 := 0
+			if len(stack) > 1 {
+				v2 = stack[len(stack)-2]
+				stack = stack[:len(stack)-2]
+			} else {
+				stack = stack[:len(stack)-1]
+			}
 			switch tokens[i] {
 			case "*":
 				stack = append(stack, v1*v2)
