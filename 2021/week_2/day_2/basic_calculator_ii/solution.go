@@ -18,7 +18,7 @@ import "strings"
 解释：由于遇到 `*` 和 `/` 且 s2 栈顶也是 `*` 或 `/`，就会先将栈顶的取出运算，所以 s2 不会有超过一个的乘号或除号；当遍历到的新运算符是加减号时，它们的优先级是最低的，所以 s2 中的所有运算符号需要先处理完再将遍历到的运算符放入 s2 中。
 
 官网运行结果记录
-执行用时：0ms
+执行用时：0ms/4ms
 内存消耗：2.9MB
 
 */
@@ -29,6 +29,7 @@ func calculate(s string) int {
 		s = "-" + s
 	}
 	s1, s2 := make([]int, 0, len(s)), make([]byte, 0)
+	flag := 1
 	cal := func() {
 		v1, v2 := s1[len(s1)-2], s1[len(s1)-1]
 		s1 = s1[:len(s1)-1]
@@ -59,11 +60,18 @@ func calculate(s string) int {
 				temp = temp*10 + int(s[j]-'0')
 				j++
 			}
-			s1 = append(s1, temp)
+			s1 = append(s1, temp*flag)
+			flag = 1
 			i = j - 1
 			continue
 		}
 		if s[i] == '+' || s[i] == '-' {
+			if i > 0 && s[i-1] == '(' {
+				if s[i] == '-' {
+					flag = -1
+				}
+				continue
+			}
 			for len(s2) > 0 && (s2[len(s2)-1] != '(') {
 				cal()
 			}

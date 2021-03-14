@@ -10,6 +10,7 @@ func Test_calculate(t *testing.T) {
 	t.Log(calculate("-2+ 1"))
 	t.Log(calculate("- (3 + (4 + 5))"))
 	t.Log(calculate("- (3 + (4 + 5 + 6))"))
+	t.Log(calculate("1-(+1+1)"))
 }
 
 func Test_calculate2(t *testing.T) {
@@ -23,4 +24,5 @@ func Test_calculate2(t *testing.T) {
 	t.Log(calculate2("2147483647"))
 	t.Log(calculate2("1-11"))
 	t.Log(calculate2("1-(5)"))
+	t.Log(calculate2("1-(+1+1)"))
 }

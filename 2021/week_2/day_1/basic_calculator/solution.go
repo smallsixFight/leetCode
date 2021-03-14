@@ -13,8 +13,10 @@ import (
 简单思路：之前做过 `逆波兰表达式求值`，所以想着先将算式转换成逆波兰表达式，再进行求值。转换思路如下：
 - 使用一个字符串和一个栈，字符串用来存逆波兰表达式（tokens），一个用来临时存储运算符号（stack）；
 - 遇到数字时进行内循环获取完整的数字，然后存入 tokens；
-- 遇到运算符号时，如果 stack 不为空并且栈顶不是左括号，则取出栈顶的元素加入 tokens 中，否则 push 到 stack 中；
-- 遇到右括号时，则不断从 stack 中 push 运算符加入 token 中，知道遇见左括号。
+- 遇到运算符号时：
+	- 如果前一个符号为左括号，可以当作是数字的正负符号，不当作运算符号；
+	- 如果 stack 不为空并且栈顶不是左括号，则取出栈顶的元素加入 tokens 中，否则 push 到 stack 中；
+- 遇到右括号时，则不断从 stack 中 push 运算符加入 tokens 中，直到遇见左括号。
 
 最后将 s1 进行逆波兰表达式求值。
 
@@ -23,7 +25,9 @@ import (
 - 使用两个 stack 分别存储数字（s1）和存储运算符和括号（s2）；
 - 从头遍历，如果当前符号是数字，则获取完整的数字入栈到 s1；
 - 如果是左括号，则直接入栈到 s2；
-- 如果是 `+` 或 `-`，如果 s2 为空或 s2 栈顶为左括号，则入栈到 s2，否则取出 s1 栈顶两个元素和 s2 的栈顶运算符进行计算，将计算的结果入栈到 s1，将新的运算符放入 s2；
+- 如果是 `+` 或 `-`：
+	- 如果前一个符号为左括号，可以当作是数字的正负符号，不当作运算符号；
+	- 如果 s2 为空或 s2 栈顶为左括号，则入栈到 s2，否则取出 s1 栈顶两个元素和 s2 的栈顶运算符进行计算，将计算的结果入栈到 s1，将新的运算符放入 s2；
 - 如果是右括号，当 s2 不为空，则再获取 s2 栈顶的运算符，计算一个新的值入栈到 s1，栈顶为左括号则直接 pop 掉，不用计算。
 
 关于右括号判断为什么不需要用 for，这是由于前面遇到运算符都会计算，所以 s2 中左括号后面只会有 0 或 1 个运算符，不会有多个。
@@ -37,10 +41,11 @@ import (
 
 func calculate2(s string) int {
 	s = strings.TrimSpace(s)
-	if len(s) > 0 && s[0] == '-' { // 处理 `-2+ 1` 的特殊情况
+	if len(s) > 0 && s[0] == '-' {
 		s = "0" + s
 	}
 	s1, s2 := make([]int, 0, len(s)), make([]byte, 0)
+	flag := 1
 	for i := 0; i < len(s); i++ {
 		if s[i] == ' ' {
 			continue
@@ -57,10 +62,17 @@ func calculate2(s string) int {
 				j++
 			}
 			i = j - 1
-			s1 = append(s1, num)
+			s1 = append(s1, num*flag)
+			flag = 1
 			continue
 		}
 		if s[i] == '+' || s[i] == '-' {
+			if i > 0 && s[i-1] == '(' {
+				if s[i] == '-' {
+					flag = -flag
+				}
+				continue
+			}
 			if len(s2) == 0 || s2[len(s2)-1] == '(' {
 				s2 = append(s2, s[i])
 			} else {
@@ -84,7 +96,7 @@ func calculate2(s string) int {
 				s1 = s1[:len(s1)-2]
 				if op == '+' {
 					s1 = append(s1, v1+v2)
-				} else if op == '-' {
+				} else {
 					s1 = append(s1, v1-v2)
 				}
 			}
@@ -107,6 +119,7 @@ func calculate2(s string) int {
 
 func calculate(s string) int {
 	tokens, stack := make([]string, 0, len(s)), make([]byte, 0)
+	flag := 1
 	for i := 0; i < len(s); i++ {
 		if s[i] == ' ' {
 			continue
@@ -116,6 +129,10 @@ func calculate(s string) int {
 		}
 		if '0' <= s[i] && s[i] <= '9' {
 			temp := strings.Builder{}
+			if flag == -1 {
+				temp.WriteByte('-')
+				flag = 1
+			}
 			temp.WriteByte(s[i])
 			j := i + 1
 			for ; j < len(s) && s[j] >= '0' && s[j] <= '9'; j++ {
@@ -123,7 +140,13 @@ func calculate(s string) int {
 			}
 			i = j - 1
 			tokens = append(tokens, temp.String())
-		} else if s[i] == '+' || s[i] == '-' { // 给的都是有效的表达式，所以不用做额外的判断
+		} else if s[i] == '+' || s[i] == '-' {
+			if i > 0 && s[i-1] == '(' {
+				if s[i] == '-' {
+					flag = -1
+				}
+				continue
+			}
 			if len(stack) > 0 && stack[len(stack)-1] != '(' {
 				v := stack[len(stack)-1]
 				stack = stack[:len(stack)-1]
