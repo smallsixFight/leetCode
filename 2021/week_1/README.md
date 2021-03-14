@@ -11,13 +11,13 @@
 - [二叉树的中序遍历](./day_3/binary_tree_inorder_traversal)
 - [二叉树的锯齿形遍历](./day_4/binary_tree_zigzag_level_order_traversal)
 - [二叉树的前序遍历](./day_4/binary_tree_preorder_traversal)
-- [二叉树呃后序遍历](./day_4/binary_tree_postorder_traversal)
+- [二叉树的后序遍历](./day_4/binary_tree_postorder_traversal)
 - [逆波兰表达式求值](./day_5/evaluate_reverse_polish_notation)
 - [最小栈](./day_5/min_stack)
 
 ------
 
-### 获得经验
+### 思路整理
 #### 有效的括号
 使用基础的栈，遍历遇到左括号就入栈，右括号就 push 栈顶的左括号进行匹配，栈为空或括号不能匹配则直接返回 false，遍历结束后栈为空则返回 true，否则返回 false。
 有个不稳定的简化方式，当栈里的元素数量大于未遍历的元素数量，也意味着无法完全匹配，也可直接 return false。
