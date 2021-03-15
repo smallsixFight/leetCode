@@ -15,30 +15,26 @@ package remove_duplicate_letters
 */
 
 func removeDuplicateLetters(s string) string {
-	l1, dict, countDict := make([]byte, 0, 26), make(map[byte]bool), make(map[byte]int)
+	l1, dict, countDict := make([]byte, 0), make([]bool, 26), make([]int, 26)
 	for i := range s {
-		if !dict[s[i]] {
+		countDict[int(s[i]-'a')]++
+	}
+	for i := range s {
+		if !dict[s[i]-'a'] {
 			for len(l1) > 0 && s[i] < l1[len(l1)-1] {
-				r := l1[len(l1)-1]
-				if _, ok := countDict[r]; !ok {
-					for j := i + 1; j < len(s); j++ {
-						if s[j] == r {
-							countDict[r]++
-						}
-					}
-				}
-				if countDict[r] > 0 {
+				idx := l1[len(l1)-1] - 'a'
+				if countDict[idx] > 1 {
 					l1 = l1[:len(l1)-1]
-					countDict[r]--
-					dict[r] = false
+					countDict[idx]--
+					dict[idx] = false
 					continue
 				}
 				break
 			}
-			dict[s[i]] = true
+			dict[s[i]-'a'] = true
 			l1 = append(l1, s[i])
-		} else if countDict[s[i]] > 0 {
-			countDict[s[i]]--
+		} else if countDict[s[i]-'a'] > 1 {
+			countDict[s[i]-'a']--
 		}
 	}
 	return string(l1)
