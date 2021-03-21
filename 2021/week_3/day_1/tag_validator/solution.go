@@ -32,15 +32,15 @@ func isValid(code string) bool {
 	temp := strings.Builder{}
 	for i := 0; i < len(code); i++ {
 		if code[i] == '<' {
-			if i+1 == len(code) {
+			if i+1 == len(code) { // 括号右侧至少要有标签名字，否则不符合条件
 				return false
 			}
 			if code[i+1] == '!' {
-				if i+11 >= len(code) || code[i:i+9] != "<![CDATA[" {
+				if i+11 >= len(code) || code[i:i+9] != "<![CDATA[" { // CDATA 标签判断，若不是 CDATA 标签，感叹号不符合条件，直接返回
 					return false
 				}
 				j := i + 9
-				for j < len(code) {
+				for j < len(code) { // CDATA 结束标签判断，没有直接返回 false
 					if j+3 >= len(code) {
 						return false
 					}
@@ -49,7 +49,7 @@ func isValid(code string) bool {
 					}
 					j++
 				}
-				if len(stack) == 0 {
+				if len(stack) == 0 { // 没有父标签进行包括
 					isPop = true
 				}
 				i = j + 2
@@ -61,24 +61,25 @@ func isValid(code string) bool {
 				for j < len(code) {
 					if 'A' <= code[j] && code[j] <= 'Z' {
 						temp.WriteByte(code[j])
-						if temp.Len() > 9 {
+						if temp.Len() > 9 { // 长度不符合条件
 							return false
 						}
 						j++
 					} else if code[j] == '>' {
-						if temp.Len() == 0 {
+						if temp.Len() == 0 { // 长度不符合条件
 							return false
 						}
 						if code[i+1] == '/' {
+							// 没有起始标签与当前的结束标签匹配，或者起始标签与结束标签不匹配
 							if len(stack) == 0 || stack[len(stack)-1] != temp.String() {
 								return false
 							}
 							stack = stack[:len(stack)-1]
-							if len(stack) == 0 {
+							if len(stack) == 0 { // 没有父标签进行包括
 								isPop = true
 							}
 						} else {
-							if isPop {
+							if isPop { // 没有父标签进行包括，返回 false
 								return false
 							}
 							stack = append(stack, temp.String())
@@ -90,10 +91,10 @@ func isValid(code string) bool {
 					}
 				}
 				i = j
-			} else {
+			} else { // 不是 CDATA 标签或大写字母，直接返回 false
 				return false
 			}
-		} else if len(stack) == 0 {
+		} else if len(stack) == 0 { // 没有标签包裹，但出现 content，返回 false
 			return false
 		}
 	}
