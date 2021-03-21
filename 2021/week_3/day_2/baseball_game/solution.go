@@ -14,7 +14,7 @@ package baseball_game
 */
 
 func calPoints(ops []string) int {
-	stack := make([]int, 0)
+	stack := make([]int, 0, len(ops))
 	for i := range ops {
 		switch ops[i][0] {
 		case 'C':
