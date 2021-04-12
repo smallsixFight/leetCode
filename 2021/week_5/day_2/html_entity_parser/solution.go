@@ -12,6 +12,8 @@ import "strings"
 
 不知道 `entityParser` 为什么在最后一个测试案例死活不能过，而且只有提交的时候会出现。
 
+找到问题，是提交用的测试案例有问题。
+
 官网运行结果记录
 执行用时：32ms(95%-entityParser2)
 内存消耗：6.9MB(50%-entityParser2)
