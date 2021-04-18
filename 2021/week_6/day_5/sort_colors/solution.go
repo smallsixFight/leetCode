@@ -11,8 +11,7 @@ package sort_colors
 - 使用 p1、p2 分别指向 `nums` 开头和尾部；
 - 从头向尾遍历 `nums`：
 	- 若 `nums[i] == 0 && i != p1`，交换 `nums[i]` 和 `nums[p1]` 且 p1 自增加一；
-	- 若 `nums[i] == 2 && nums[p2] != 2`，交换 `nums[i]` 和 `nums[p2]` 且 p2 减一；
-	- 若 `nums[i] == 2 && nums[p2] == 2`，p2 减一；
+	- 若 `nums[i] == 2`，交换 `nums[i]` 和 `nums[p2]` 且 p2 减一；
 	- 其他情况，i 自增加一。
 
 官网运行结果记录
