@@ -1,7 +1,7 @@
 ## 总结
 
 ### 简述
-本周为做题的第四周，累计刷题 11 题，失败一题，题目如下：
+本周为做题的第五周，累计刷题 11 题，失败一题，题目如下：
 
 - [删除字符串中的所有相邻重复项 II](./day_1/remove_all_adjacent_duplicates_in_string_ii)
 - [移除无效的括号](./day_1/minimum_remove_to_make_valid_parentheses)

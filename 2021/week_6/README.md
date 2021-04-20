@@ -1,7 +1,7 @@
 ## 总结
 
 ### 简述
-本周为做题的第四周，累计刷题 13 题，有几道题是重复出现的题，题目如下：
+本周为做题的第六周，累计刷题 13 题，有几道题是重复出现的题，题目如下：
 
 - [用两个栈实现队列](./day_1/yong_liang_ge_zhan_shi_xian_dui_lie_lcof)
 - [包含 min 函数的栈](./day_1/bao_han_minhan_shu_de_zhan_lcof)
