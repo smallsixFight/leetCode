@@ -8,7 +8,7 @@ import (
 /*
 452
 来源：[leetCode](https://leetcode-cn.com/)
-题目：[ 用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/)
+题目：[用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/)
 标签：`排序` `贪心算法`
 
 思路：大致处理逻辑如下：
