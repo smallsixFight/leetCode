@@ -1,7 +1,7 @@
 package same_tree
 
 /*
-690
+100
 来源：[leetCode](https://leetcode-cn.com/)
 题目：[相同的树](https://leetcode-cn.com/problems/same-tree/)
 标签：`树` `深度优先探索`
