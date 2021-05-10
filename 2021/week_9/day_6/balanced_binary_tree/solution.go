@@ -7,7 +7,7 @@ import (
 /*
 110
 来源：[leetCode](https://leetcode-cn.com/)
-题目：[数组异或操作](https://leetcode-cn.com/problems/balanced-binary-tree/)
+题目：[平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
 标签：`深度优先探索` `树` `递归`
 
 简单思路：深度遍历分别获取左子树和右子树的高度，比较高度差。
